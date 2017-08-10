@@ -1,2 +1,2 @@
 # dataliteracy
-Explain and improve data literacy
+Explain and improve data literacy.
