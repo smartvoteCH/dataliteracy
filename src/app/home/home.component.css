@@ -1,0 +1,46 @@
+
+
+.tile {
+  display: block;
+  margin: 3% 1.5%;
+  padding: .75em;
+  vertical-align: middle;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  color: #595959;
+}
+
+@media screen and (min-width: 400px) {
+  .tile-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tile {
+    text-align: center;
+    flex-basis: 30%;
+    min-height: 20vh;
+    position:relative;
+  }
+
+  .tile-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tile-content i {
+    display: block;
+  }
+
+  .tile:empty {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .tile {
+    margin: 1.5%;
+  }
+}
