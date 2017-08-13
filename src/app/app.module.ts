@@ -7,11 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
+
+import { QuestionService } from './services/question.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    QuestionnaireComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,7 @@ import { HomeComponent } from './home/home.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [QuestionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

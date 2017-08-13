@@ -1,0 +1,29 @@
+<nav>
+  <ul>
+    <li>
+      <a [routerLink]="['/', currentPage, index-1]" [hidden]="!hasPrevious">
+        <i class="fa fa-arrow-left"></i>
+        rückwärts
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/']"><i class="fa fa-arrow-up"></i>Home</a>
+    </li>
+    <li>
+      <a [routerLink]="['/', currentPage, index+1]" [hidden]="!hasNext">
+        vorwärts
+        <i class="fa fa-arrow-right"></i>
+      </a>
+    </li>
+  </ul>
+</nav>
+<ng-container *ngIf="currentQuestion">
+  <h1>{{currentQuestion.title}}</h1>
+  <p>{{currentQuestion.description}}</p>
+  <div>
+    <button (click)="toggleOpen()" class="show-answer">Antwort anzeigen</button>
+  </div>
+  <div *ngIf="isOpen" class="answer">
+    {{currentQuestion.answer}}
+  </div>
+</ng-container>

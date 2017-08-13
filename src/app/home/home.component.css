@@ -1,4 +1,6 @@
-
+h1 {
+  text-align: center;
+}
 
 .tile {
   display: block;
@@ -9,6 +11,10 @@
   border-radius: 5px;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
   color: #595959;
+}
+
+.tile[href] {
+  color: #000000;
 }
 
 @media screen and (min-width: 400px) {
