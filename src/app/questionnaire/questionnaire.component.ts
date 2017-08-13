@@ -13,6 +13,7 @@ import { Question } from '../models/question.model';
 })
 export class QuestionnaireComponent implements OnInit, OnDestroy {
 
+  private _ready: boolean;
   private _open: boolean;
   private _index: number;
   private _alive: boolean;
@@ -24,11 +25,17 @@ export class QuestionnaireComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this._alive = true;
+    this._ready = false;
     this._open = false;
     this._index = 0;
     this._currentPage = this.router.url.split('/')[1];
 
-    this._questions = this.questionService.getQuestions(this.currentPage);
+    this.questionService.getQuestions(this.currentPage)
+      .takeWhile(() => this._alive)
+      .subscribe((questions: any) => {
+        this._questions = questions;
+        this._ready = true;
+      });
 
     this.route.params.takeWhile(() => this._alive).subscribe(
       (params: Params) => {
@@ -42,6 +49,10 @@ export class QuestionnaireComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this._alive = false;
+  }
+
+  get ready(): boolean {
+    return this._ready;
   }
 
   get isOpen(): boolean {

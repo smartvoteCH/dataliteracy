@@ -38,11 +38,11 @@ describe('dataliteracy app', () => {
 
     it('navigate between questions', () => {
       questionnaire.navigateTo();
-      expect(questionnaire.getTitle()).toEqual('Frage 1');
+      expect(questionnaire.getTitle()).toEqual('SV-Frage 1');
       questionnaire.goToNext();
-      expect(questionnaire.getTitle()).toEqual('Frage 2');
+      expect(questionnaire.getTitle()).toEqual('SV-Frage 2');
       questionnaire.goToPrev();
-      expect(questionnaire.getTitle()).toEqual('Frage 1');
+      expect(questionnaire.getTitle()).toEqual('SV-Frage 1');
     });
 
     it('show answer', () => {

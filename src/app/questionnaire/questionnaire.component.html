@@ -1,4 +1,4 @@
-<nav>
+<nav *ngIf="ready">
   <ul>
     <li>
       <a [routerLink]="['/', currentPage, index-1]" [hidden]="!hasPrevious">
@@ -17,7 +17,7 @@
     </li>
   </ul>
 </nav>
-<ng-container *ngIf="currentQuestion">
+<ng-container *ngIf="ready && currentQuestion">
   <h1>{{currentQuestion.title}}</h1>
   <p>{{currentQuestion.description}}</p>
   <div>
