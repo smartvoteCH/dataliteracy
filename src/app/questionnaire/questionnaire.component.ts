@@ -4,6 +4,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 import 'rxjs/add/operator/takeWhile';
 
 import { QuestionService } from '../services/question.service';
+import { Question } from '../models/question.model';
 
 @Component({
   selector: 'dl-questionnaire',
@@ -15,7 +16,7 @@ export class QuestionnaireComponent implements OnInit, OnDestroy {
   private _open: boolean;
   private _index: number;
   private _alive: boolean;
-  private _questions;
+  private _questions: Question[];
   private _currentPage;
 
 

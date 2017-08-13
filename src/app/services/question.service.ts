@@ -1,31 +1,21 @@
 import { Injectable } from '@angular/core';
 
+import { Question } from '../models/question.model';
+
 @Injectable()
 export class QuestionService {
 
   private _cache = {};
 
   private _questions = [
-    {
-      title: 'Question 1',
-      description: 'Description 1',
-      answer: 'Answer1'
-    },
-    {
-      title: 'Question 2',
-      description: 'Description 2',
-      answer: 'Answer2'
-    },
-    {
-      title: 'Question 3',
-      description: 'Description 3',
-      answer: 'Answer3'
-    },
+    new Question('Frage 1', 'Beschreibung 1', 'Antwort 1'),
+    new Question('Frage 2', 'Beschreibung 2', 'Antwort 2'),
+    new Question('Frage 3', 'Beschreibung 3', 'Antwort 3')
   ];
 
   constructor() { }
 
-  getQuestions(key: string) {
+  getQuestions(key: string): Question[] {
     if (!this._cache[key]) {
       console.log('cache miss for', key);
       // TODO load from file here
