@@ -32,7 +32,7 @@ export class SmartspiderComponent implements OnInit, OnChanges {
   }
 
   ngOnInit() {
-  this.drawSmartspiderBackground(this.myElement.nativeElement);
+    this.drawSmartspiderBackground(this.myElement.nativeElement);
     this._initialized = true;
     this.ngOnChanges({});
   }

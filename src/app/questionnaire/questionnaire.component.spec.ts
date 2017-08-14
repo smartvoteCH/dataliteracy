@@ -5,6 +5,7 @@ import { QuestionService } from '../services/question.service';
 import { MockQuestionService } from '../services/mock-question.service';
 
 import { SmartspiderComponent } from '../graphics/smartspider/smartspider.component';
+import { BarchartComponent } from '../graphics/barchart/barchart.component';
 import { PartComponent } from './part/part.component';
 import { QuestionnaireComponent } from './questionnaire.component';
 
@@ -14,7 +15,7 @@ describe('QuestionnaireComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuestionnaireComponent, PartComponent, SmartspiderComponent ],
+      declarations: [ QuestionnaireComponent, PartComponent, SmartspiderComponent, BarchartComponent ],
       imports: [ RouterTestingModule ],
       providers: [
         {provide: QuestionService, useClass: MockQuestionService}

@@ -1,4 +1,5 @@
 import { Smartspider } from './smartspider.model';
+import { ChartData } from './chart.model';
 
 export class QuestionModel implements Question {
 
@@ -13,6 +14,8 @@ export class QuestionModel implements Question {
       if (part['type']) {
         if (part.type === 'smartspider') {
           description.push(new SmartspiderPart(<Smartspider>part.data));
+        } else if (part.type === 'barchart') {
+          description.push(new ChartPart(part.type, part.data));
         } else {
           console.log(`found unhandled type "${part['type']}"`);
         }
@@ -83,5 +86,23 @@ export class SmartspiderPart implements QuestionPart {
 
   get smartspider(): Smartspider {
     return this._spider;
+  }
+}
+
+export class ChartPart implements QuestionPart {
+  private _type: string;
+  private _chartData: ChartData;
+
+  constructor(type: string, chartData: ChartData) {
+    this._type = type;
+    this._chartData = chartData;
+  }
+
+  get type(): string {
+    return this._type;
+  }
+
+  get chartData(): ChartData {
+    return this._chartData;
   }
 }

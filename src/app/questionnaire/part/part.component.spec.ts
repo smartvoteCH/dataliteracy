@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { QuestionPart } from '../../models/question.model';
 
 import { SmartspiderComponent } from '../../graphics/smartspider/smartspider.component';
+import { BarchartComponent } from '../../graphics/barchart/barchart.component';
 import { PartComponent } from './part.component';
 
 describe('PartComponent', () => {
@@ -11,7 +12,7 @@ describe('PartComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PartComponent, SmartspiderComponent ]
+      declarations: [ PartComponent, SmartspiderComponent, BarchartComponent ]
     })
     .compileComponents();
   }));

@@ -12,6 +12,7 @@ import { QuestionnaireComponent } from './questionnaire/questionnaire.component'
 import { QuestionService } from './services/question.service';
 import { SmartspiderComponent } from './graphics/smartspider/smartspider.component';
 import { PartComponent } from './questionnaire/part/part.component';
+import { BarchartComponent } from './graphics/barchart/barchart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PartComponent } from './questionnaire/part/part.component';
     HomeComponent,
     QuestionnaireComponent,
     SmartspiderComponent,
-    PartComponent
+    PartComponent,
+    BarchartComponent
   ],
   imports: [
     BrowserModule,

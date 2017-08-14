@@ -3,5 +3,8 @@
   <ng-container *ngSwitchCase="'smartspider'">
     <dl-smartspider [voterSmartspider]="part.smartspider" [showVoterSpider]="true"></dl-smartspider>
   </ng-container>
+  <ng-container *ngSwitchCase="'barchart'">
+    <dl-barchart [chartData]="part.chartData"></dl-barchart>
+  </ng-container>
   <p *ngSwitchDefault>can not yet handle part of type {{part.type}}</p>
 </ng-container>

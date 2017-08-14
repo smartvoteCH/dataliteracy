@@ -1,0 +1,39 @@
+[
+  {
+		"title": "Proportion-Frage 1",
+		"description": ["Proportion-Beschreibung 1"],
+		"answer": "Antwort 1"
+	},
+	{
+		"title": "Proportion-Frage 2",
+		"description": [
+      "Proportion-Beschreibung 2",
+      {
+        "type": "barchart",
+        "data": [
+          {
+            "value": 3,
+            "color": "red"
+          },
+          {
+            "value": 11,
+            "color": "blue"
+          },
+          {
+            "value": 7,
+            "color": "yellow"
+          },
+          {
+            "value": 20,
+            "color": "green"
+          },
+          {
+            "value": 18,
+            "color": "black"
+          }
+        ]
+      }
+    ],
+		"answer": "Antwort 2"
+	}
+]

@@ -10,7 +10,9 @@ const appRoutes: Routes = [
   {path: 'smartvote/:id', component: QuestionnaireComponent},
   {path: 'smartvote', component: QuestionnaireComponent},
   {path: 'smartspider/:id', component: QuestionnaireComponent},
-  {path: 'smartspider', component: QuestionnaireComponent}
+  {path: 'smartspider', component: QuestionnaireComponent},
+  {path: 'proportion/:id', component: QuestionnaireComponent},
+  {path: 'proportion', component: QuestionnaireComponent}
 ];
 
 @NgModule({
