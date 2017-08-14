@@ -11,12 +11,6 @@ export class QuestionService {
 
   private _cache = {};
 
-  private _questions = [
-    new QuestionModel('Frage 1', 'Beschreibung 1', 'Antwort 1'),
-    new QuestionModel('Frage 2', 'Beschreibung 2', 'Antwort 2'),
-    new QuestionModel('Frage 3', 'Beschreibung 3', 'Antwort 3')
-  ];
-
   constructor(private http: Http) { }
 
   public getQuestions(key: string): Observable<Question[]> {

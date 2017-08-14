@@ -1,12 +1,12 @@
 [
   {
 		"title": "Spider-Frage 1",
-		"description": "Beschreibung 1",
+		"description": ["Spider-Beschreibung 1a", "Spider-Beschreibung 1b"],
 		"answer": "Antwort 1"
 	},
 	{
 		"title": "Spider-Frage 2",
-		"description": "Beschreibung 2",
+		"description": ["Spider-Beschreibung 2"],
 		"answer": "Antwort 2"
 	}
 ]

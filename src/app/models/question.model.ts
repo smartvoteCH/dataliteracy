@@ -1,15 +1,25 @@
 export class QuestionModel implements Question {
 
   private _title: string;
-  private _description: string;
+  private _description: QuestionPart[];
   private _answer: string;
 
 
   static fromJSON(data: any) {
-    return new QuestionModel(data.title, data.description, data.answer);
+    const description = new Array<QuestionPart>();
+    data.description.forEach((part) => {
+      if (part['type']) {
+        console.log('is typed', part['type']);
+      } else if (typeof part === 'string') {
+        description.push(new TextPart(part));
+      }else {
+        console.warn('can not parse part', part);
+      }
+    });
+    return new QuestionModel(data.title, description, data.answer);
   }
 
-  constructor(title: string, description: string, answer: string) {
+  constructor(title: string, description: QuestionPart[], answer: string) {
     this._title = title;
     this._description = description;
     this._answer = answer;
@@ -19,7 +29,7 @@ export class QuestionModel implements Question {
     return this._title;
   }
 
-  get description(): string {
+  get description(): QuestionPart[] {
     return this._description;
   }
 
@@ -30,7 +40,27 @@ export class QuestionModel implements Question {
 }
 
 export interface Question {
-    title: string;
-    description: string;
-    answer: string;
+  title: string;
+  description: QuestionPart[];
+  answer: string;
+}
+
+export interface QuestionPart {
+  type: string;
+}
+
+export class TextPart implements QuestionPart {
+  private _text: string;
+
+  constructor(text: string) {
+    this._text = text;
+  }
+
+  get type() {
+    return 'text';
+  }
+
+  get text() {
+    return this._text;
+  }
 }

@@ -19,7 +19,12 @@
 </nav>
 <ng-container *ngIf="ready && currentQuestion">
   <h1>{{currentQuestion.title}}</h1>
-  <p>{{currentQuestion.description}}</p>
+  <ng-container *ngFor="let part of currentQuestion.description">
+    <ng-container [ngSwitch]="part.type">
+      <p *ngSwitchCase="'text'">{{part.text}}</p>
+      <p *ngSwitchDefault>can not yet handle part of type {{part.type}}</p>
+    </ng-container>
+  </ng-container>
   <div>
     <button (click)="toggleOpen()" class="show-answer">Antwort anzeigen</button>
   </div>
