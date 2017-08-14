@@ -29,18 +29,15 @@ export class SmartspiderComponent implements OnInit, OnChanges {
   private _initialized: boolean = false;
 
   constructor(public myElement: ElementRef) {
-    console.debug("const:", this.candidateSmartspider);
   }
 
   ngOnInit() {
-  console.debug("ngOnInit", this.candidateSmartspider);
-    this.drawSmartspiderBackground(this.myElement.nativeElement);
+  this.drawSmartspiderBackground(this.myElement.nativeElement);
     this._initialized = true;
     this.ngOnChanges({});
   }
 
   ngOnChanges(changes: any) {
-    console.debug("ngOnChanges");
     if (!this._initialized) return;
     const smartspiderElement = d3Select.select(this.myElement.nativeElement).select('.smartspider')
 
