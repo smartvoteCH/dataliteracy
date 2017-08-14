@@ -16,7 +16,7 @@ describe('BarchartComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(BarchartComponent);
     component = fixture.componentInstance;
-    component.chartData = <ChartData>[{value: 0, color: 'red'}];
+    component.chart = <Chart>{data:[{value: 0, color: 'red'}]};
     fixture.detectChanges();
   });
 

@@ -1,5 +1,5 @@
 import { Smartspider } from './smartspider.model';
-import { ChartData } from './chart.model';
+import { Chart } from './chart.model';
 
 export class QuestionModel implements Question {
 
@@ -91,18 +91,18 @@ export class SmartspiderPart implements QuestionPart {
 
 export class ChartPart implements QuestionPart {
   private _type: string;
-  private _chartData: ChartData;
+  private _chart: Chart;
 
-  constructor(type: string, chartData: ChartData) {
+  constructor(type: string, chart: Chart) {
     this._type = type;
-    this._chartData = chartData;
+    this._chart = chart;
   }
 
   get type(): string {
     return this._type;
   }
 
-  get chartData(): ChartData {
-    return this._chartData;
+  get chart(): Chart {
+    return this._chart;
   }
 }

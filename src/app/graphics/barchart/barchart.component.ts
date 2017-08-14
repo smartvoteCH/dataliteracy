@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnInit } from '@angular/core';
 
-import { ChartData } from '../../models/chart.model';
+import { Chart } from '../../models/chart.model';
 
 import * as d3Select from 'd3-selection';
 
@@ -11,14 +11,14 @@ import * as d3Select from 'd3-selection';
 })
 export class BarchartComponent implements OnInit {
 
-  @Input() chartData: ChartData;
+  @Input() chart: Chart;
 
   constructor(private rootElement: ElementRef) { }
 
   ngOnInit() {
     d3Select.select(this.rootElement.nativeElement)
       .selectAll('div')
-      .data(this.chartData)
+      .data(this.chart.data)
       .enter()
       .append('div')
       .style('height', (d) => `${d.value * 5}px`)

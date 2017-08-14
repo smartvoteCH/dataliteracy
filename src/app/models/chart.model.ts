@@ -1,4 +1,4 @@
-export interface ChartData {
+export interface Chart {
   data: ChartDataPoint[];
 }
 
