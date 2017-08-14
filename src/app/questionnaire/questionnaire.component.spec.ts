@@ -4,6 +4,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { QuestionService } from '../services/question.service';
 import { MockQuestionService } from '../services/mock-question.service';
 
+import { SmartspiderComponent } from '../graphics/smartspider/smartspider.component';
+import { PartComponent } from './part/part.component';
 import { QuestionnaireComponent } from './questionnaire.component';
 
 describe('QuestionnaireComponent', () => {
@@ -12,7 +14,7 @@ describe('QuestionnaireComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuestionnaireComponent ],
+      declarations: [ QuestionnaireComponent, PartComponent, SmartspiderComponent ],
       imports: [ RouterTestingModule ],
       providers: [
         {provide: QuestionService, useClass: MockQuestionService}

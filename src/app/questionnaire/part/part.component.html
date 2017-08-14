@@ -1,0 +1,7 @@
+<ng-container [ngSwitch]="part.type">
+  <p *ngSwitchCase="'text'">{{part.text}}</p>
+  <ng-container *ngSwitchCase="'smartspider'">
+    <dl-smartspider [smartspider]="part.smartspider"></dl-smartspider>
+  </ng-container>
+  <p *ngSwitchDefault>can not yet handle part of type {{part.type}}</p>
+</ng-container>

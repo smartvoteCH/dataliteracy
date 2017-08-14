@@ -1,7 +1,57 @@
 [
   {
 		"title": "Spider-Frage 1",
-		"description": ["Spider-Beschreibung 1a", "Spider-Beschreibung 1b"],
+		"description": [
+      "Spider-Beschreibung 1a",
+      {
+        "type": "smartspider",
+        "data": {
+          "color": "00FF00",
+          "smartspider": [
+            {
+              "id": 15800008474,
+              "value": 0,
+              "name": "Offene Aussenpolitik"
+            },
+            {
+              "id": 15800008475,
+              "value": 0,
+              "name": "Liberale Wirtschaftspolitik"
+            },
+            {
+              "id": 15800008476,
+              "value": 25,
+              "name": "Restriktive Finanzpolitik"
+            },
+            {
+              "id": 15800008477,
+              "value": 0,
+              "name": "Law & Order"
+            },
+            {
+              "id": 15800008478,
+              "value": 0,
+              "name": "Restriktive Migrationspolitik"
+            },
+            {
+              "id": 15800008479,
+              "value": 0,
+              "name": "Ausgebauter Umweltschutz"
+            },
+            {
+              "id": 15800008480,
+              "value": 75,
+              "name": "Ausgebauter Sozialstaat"
+            },
+            {
+              "id": 15800008481,
+              "value": 100,
+              "name": "Liberale Gesellschaft"
+            }
+          ]
+        }
+      },
+      "Spider-Beschreibung 1b"],
 		"answer": "Antwort 1"
 	},
 	{

@@ -1,3 +1,5 @@
+import { Smartspider } from './smartspider.model';
+
 export class QuestionModel implements Question {
 
   private _title: string;
@@ -9,7 +11,11 @@ export class QuestionModel implements Question {
     const description = new Array<QuestionPart>();
     data.description.forEach((part) => {
       if (part['type']) {
-        console.log('is typed', part['type']);
+        if (part.type === 'smartspider') {
+          description.push(new SmartspiderPart(<Smartspider>part.data));
+        } else {
+          console.log(`found unhandled type "${part['type']}"`);
+        }
       } else if (typeof part === 'string') {
         description.push(new TextPart(part));
       }else {
@@ -62,5 +68,20 @@ export class TextPart implements QuestionPart {
 
   get text() {
     return this._text;
+  }
+}
+
+export class SmartspiderPart implements QuestionPart {
+  private _spider: Smartspider;
+
+  constructor(smartspider: Smartspider) {
+    this._spider = smartspider;
+  }
+  get type(): string {
+    return 'smartspider';
+  }
+
+  get smartspider(): Smartspider {
+    return this._spider;
   }
 }

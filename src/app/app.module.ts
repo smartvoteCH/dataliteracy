@@ -10,12 +10,16 @@ import { HomeComponent } from './home/home.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 
 import { QuestionService } from './services/question.service';
+import { SmartspiderComponent } from './graphics/smartspider/smartspider.component';
+import { PartComponent } from './questionnaire/part/part.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    QuestionnaireComponent
+    QuestionnaireComponent,
+    SmartspiderComponent,
+    PartComponent
   ],
   imports: [
     BrowserModule,
