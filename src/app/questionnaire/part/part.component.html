@@ -6,5 +6,8 @@
   <ng-container *ngSwitchCase="'barchart'">
     <dl-barchart [chart]="part.chart"></dl-barchart>
   </ng-container>
+  <ng-container *ngSwitchCase="'piechart'">
+    <dl-piechart [chart]="part.chart"></dl-piechart>
+  </ng-container>
   <p *ngSwitchDefault>can not yet handle part of type {{part.type}}</p>
 </ng-container>

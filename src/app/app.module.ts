@@ -13,6 +13,7 @@ import { QuestionService } from './services/question.service';
 import { SmartspiderComponent } from './graphics/smartspider/smartspider.component';
 import { PartComponent } from './questionnaire/part/part.component';
 import { BarchartComponent } from './graphics/barchart/barchart.component';
+import { PiechartComponent } from './graphics/piechart/piechart.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BarchartComponent } from './graphics/barchart/barchart.component';
     QuestionnaireComponent,
     SmartspiderComponent,
     PartComponent,
-    BarchartComponent
+    BarchartComponent,
+    PiechartComponent
   ],
   imports: [
     BrowserModule,

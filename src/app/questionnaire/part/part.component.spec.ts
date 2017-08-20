@@ -4,6 +4,7 @@ import { QuestionPart } from '../../models/question.model';
 
 import { SmartspiderComponent } from '../../graphics/smartspider/smartspider.component';
 import { BarchartComponent } from '../../graphics/barchart/barchart.component';
+import { PiechartComponent } from '../../graphics/piechart/piechart.component';
 import { PartComponent } from './part.component';
 
 describe('PartComponent', () => {
@@ -12,7 +13,7 @@ describe('PartComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PartComponent, SmartspiderComponent, BarchartComponent ]
+      declarations: [ PartComponent, SmartspiderComponent, BarchartComponent, PiechartComponent ]
     })
     .compileComponents();
   }));

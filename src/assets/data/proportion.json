@@ -35,6 +35,34 @@
             }
           ]
         }
+      },
+      {
+        "type": "piechart",
+        "data": {
+          "title": "won't show yet",
+          "data": [
+            {
+              "value": 3,
+              "color": "red"
+            },
+            {
+              "value": 11,
+              "color": "blue"
+            },
+            {
+              "value": 7,
+              "color": "yellow"
+            },
+            {
+              "value": 20,
+              "color": "green"
+            },
+            {
+              "value": 18,
+              "color": "black"
+            }
+          ]
+        }
       }
     ],
 		"answer": "Antwort 2"

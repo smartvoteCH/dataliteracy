@@ -1,4 +1,5 @@
 export interface Chart {
+  renderLabels: boolean;
   data: ChartDataPoint[];
 }
 

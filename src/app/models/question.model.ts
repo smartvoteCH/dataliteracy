@@ -14,7 +14,7 @@ export class QuestionModel implements Question {
       if (part['type']) {
         if (part.type === 'smartspider') {
           description.push(new SmartspiderPart(<Smartspider>part.data));
-        } else if (part.type === 'barchart') {
+        } else if (part.type === 'barchart' || part.type === 'piechart') {
           description.push(new ChartPart(part.type, part.data));
         } else {
           console.log(`found unhandled type "${part['type']}"`);
