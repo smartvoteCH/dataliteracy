@@ -2,7 +2,7 @@
   {
 		"title": "Proportion-Frage 1",
 		"description": ["Proportion-Beschreibung 1"],
-		"answer": "Antwort 1"
+		"answer": ["Antwort 1"]
 	},
 	{
 		"title": "Proportion-Frage 2",
@@ -65,6 +65,6 @@
         }
       }
     ],
-		"answer": "Antwort 2"
+		"answer": ["Antwort 2"]
 	}
 ]

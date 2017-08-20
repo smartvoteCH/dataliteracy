@@ -5,30 +5,39 @@ export class QuestionModel implements Question {
 
   private _title: string;
   private _description: QuestionPart[];
-  private _answer: string;
+  private _answer: QuestionPart[];
 
 
   static fromJSON(data: any) {
-    const description = new Array<QuestionPart>();
-    data.description.forEach((part) => {
+    const description = this.questionPartFromJSON(data.description);
+    const answer = this.questionPartFromJSON(data.answer);
+    return new QuestionModel(data.title, description, answer);
+  }
+
+  private static questionPartFromJSON(list: any): QuestionPart[] {
+    const parts = new Array<QuestionPart>();
+    if (!list) {
+      return parts;
+    }
+    list.forEach((part) => {
       if (part['type']) {
         if (part.type === 'smartspider') {
-          description.push(new SmartspiderPart(<Smartspider>part.data));
+          parts.push(new SmartspiderPart(<Smartspider>part.data));
         } else if (part.type === 'barchart' || part.type === 'piechart') {
-          description.push(new ChartPart(part.type, part.data));
+          parts.push(new ChartPart(part.type, part.data));
         } else {
           console.log(`found unhandled type "${part['type']}"`);
         }
       } else if (typeof part === 'string') {
-        description.push(new TextPart(part));
+        parts.push(new TextPart(part));
       }else {
         console.warn('can not parse part', part);
       }
     });
-    return new QuestionModel(data.title, description, data.answer);
+    return parts;
   }
 
-  constructor(title: string, description: QuestionPart[], answer: string) {
+  constructor(title: string, description: QuestionPart[], answer: QuestionPart[]) {
     this._title = title;
     this._description = description;
     this._answer = answer;
@@ -42,7 +51,7 @@ export class QuestionModel implements Question {
     return this._description;
   }
 
-  get answer(): string {
+  get answer(): QuestionPart[] {
     return this._answer;
   }
 
@@ -51,7 +60,7 @@ export class QuestionModel implements Question {
 export interface Question {
   title: string;
   description: QuestionPart[];
-  answer: string;
+  answer: QuestionPart[];
 }
 
 export interface QuestionPart {

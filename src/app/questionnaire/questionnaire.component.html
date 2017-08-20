@@ -24,6 +24,6 @@
     <button (click)="toggleOpen()" class="show-answer">Antwort anzeigen</button>
   </div>
   <div *ngIf="isOpen" class="answer">
-    {{currentQuestion.answer}}
+    <dl-part *ngFor="let part of currentQuestion.answer" [part]="part"></dl-part>
   </div>
 </ng-container>

@@ -52,11 +52,11 @@
         }
       },
       "Spider-Beschreibung 1b"],
-		"answer": "Antwort 1"
+		"answer": ["Antwort 1"]
 	},
 	{
 		"title": "Spider-Frage 2",
 		"description": ["Spider-Beschreibung 2"],
-		"answer": "Antwort 2"
+		"answer": ["Antwort 2"]
 	}
 ]

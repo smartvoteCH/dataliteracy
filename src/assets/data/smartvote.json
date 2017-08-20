@@ -2,16 +2,16 @@
   {
 		"title": "SV-Frage 1",
 		"description": ["SV-Beschreibung 1"],
-		"answer": "Antwort 1"
+		"answer": ["Antwort 1"]
 	},
 	{
 		"title": "SV-Frage 2",
 		"description": ["SV-Beschreibung 2"],
-		"answer": "Antwort 2"
+		"answer": ["Antwort 2"]
 	},
 	{
 		"title": "SV-Frage 3",
 		"description": ["SV-Beschreibung 3"],
-		"answer": "Antwort 3"
+		"answer": ["Antwort 3"]
 	}
 ]
