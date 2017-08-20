@@ -9,5 +9,12 @@
   <ng-container *ngSwitchCase="'piechart'">
     <dl-piechart [chart]="part.chart"></dl-piechart>
   </ng-container>
+  <ng-container *ngSwitchCase="'figure'">
+    <figure>
+
+      <img [src]="part.figure.url" [alt]="part.figure.alt"  />
+      <figcaption *ngIf="part.figure.caption">{{part.figure.caption}}</figcaption>
+    </figure>
+  </ng-container>
   <p *ngSwitchDefault>can not yet handle part of type {{part.type}}</p>
 </ng-container>

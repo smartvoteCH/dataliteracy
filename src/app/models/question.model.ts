@@ -25,6 +25,8 @@ export class QuestionModel implements Question {
           parts.push(new SmartspiderPart(<Smartspider>part.data));
         } else if (part.type === 'barchart' || part.type === 'piechart') {
           parts.push(new ChartPart(part.type, part.data));
+        } else if (part.type === 'figure') {
+          parts.push(new FigurePart(part));
         } else {
           console.log(`found unhandled type "${part['type']}"`);
         }
@@ -89,6 +91,7 @@ export class SmartspiderPart implements QuestionPart {
   constructor(smartspider: Smartspider) {
     this._spider = smartspider;
   }
+
   get type(): string {
     return 'smartspider';
   }
@@ -113,5 +116,21 @@ export class ChartPart implements QuestionPart {
 
   get chart(): Chart {
     return this._chart;
+  }
+}
+
+export class FigurePart implements QuestionPart {
+  private _figure: any;
+
+  constructor(figure: any) {
+    this._figure = figure;
+  }
+
+  get type(): string {
+    return 'figure';
+  }
+
+  get figure() {
+    return this._figure;
   }
 }
