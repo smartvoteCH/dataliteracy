@@ -1,0 +1,35 @@
+.form-wrapper {
+  max-width: 800px;
+  margin: auto;
+}
+
+.form-wrapper .row {
+  padding: .4em;
+}
+
+label {
+  display: inline-block;
+  min-width: 8em;
+  text-align: right;
+  margin-right: .2em;
+  font-weight: bold;
+}
+
+.row.high label {
+  vertical-align: top;
+  margin-top: .35em;
+}
+
+input,
+textarea {
+  font-size: inherit;
+  border: 1px solid grey;
+  border-radius: 4px;
+  min-width: 20em;
+  padding: .4em;
+}
+
+textarea {
+  min-height: 10em;
+  min-width: 40em;
+}

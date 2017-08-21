@@ -1,24 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { ImpressumComponent } from './impressum.component';
-
+import { ContactComponent } from './contact.component';
 import { SimpleNavigationComponent } from '../navigation/simple-navigation/simple-navigation.component';
 
-describe('ImpressumComponent', () => {
-  let component: ImpressumComponent;
-  let fixture: ComponentFixture<ImpressumComponent>;
+describe('ContactComponent', () => {
+  let component: ContactComponent;
+  let fixture: ComponentFixture<ContactComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ImpressumComponent, SimpleNavigationComponent ],
+      declarations: [ ContactComponent, SimpleNavigationComponent ],
       imports: [ RouterTestingModule ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ImpressumComponent);
+    fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

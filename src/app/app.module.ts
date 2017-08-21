@@ -15,6 +15,8 @@ import { PartComponent } from './questionnaire/part/part.component';
 import { BarchartComponent } from './graphics/barchart/barchart.component';
 import { PiechartComponent } from './graphics/piechart/piechart.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { ContactComponent } from './contact/contact.component';
+import { SimpleNavigationComponent } from './navigation/simple-navigation/simple-navigation.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ImpressumComponent } from './impressum/impressum.component';
     PartComponent,
     BarchartComponent,
     PiechartComponent,
-    ImpressumComponent
+    ImpressumComponent,
+    ContactComponent,
+    SimpleNavigationComponent
   ],
   imports: [
     BrowserModule,

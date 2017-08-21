@@ -1,24 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { ImpressumComponent } from './impressum.component';
+import { SimpleNavigationComponent } from './simple-navigation.component';
 
-import { SimpleNavigationComponent } from '../navigation/simple-navigation/simple-navigation.component';
-
-describe('ImpressumComponent', () => {
-  let component: ImpressumComponent;
-  let fixture: ComponentFixture<ImpressumComponent>;
+describe('SimpleNavigationComponent', () => {
+  let component: SimpleNavigationComponent;
+  let fixture: ComponentFixture<SimpleNavigationComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ImpressumComponent, SimpleNavigationComponent ],
+      declarations: [ SimpleNavigationComponent ],
       imports: [ RouterTestingModule ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ImpressumComponent);
+    fixture = TestBed.createComponent(SimpleNavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
