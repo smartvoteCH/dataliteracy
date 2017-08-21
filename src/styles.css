@@ -10,3 +10,19 @@ body {
   font-size: 14px;
   color: #000;
 }
+
+nav ul {
+  text-align: center;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  padding: 12px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  //box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}

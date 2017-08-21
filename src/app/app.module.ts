@@ -14,6 +14,7 @@ import { SmartspiderComponent } from './graphics/smartspider/smartspider.compone
 import { PartComponent } from './questionnaire/part/part.component';
 import { BarchartComponent } from './graphics/barchart/barchart.component';
 import { PiechartComponent } from './graphics/piechart/piechart.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PiechartComponent } from './graphics/piechart/piechart.component';
     SmartspiderComponent,
     PartComponent,
     BarchartComponent,
-    PiechartComponent
+    PiechartComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
