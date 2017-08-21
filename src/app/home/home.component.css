@@ -21,12 +21,13 @@ h1 {
   .tile-container {
     display: flex;
     flex-wrap: wrap;
+    height: calc(100vh - 3.32em - 2em);/*needed for FF, won't accept margins of .tile's otherwise 100vh - height of h1 - some magic number that looks nice in FF*/
   }
   .tile {
     text-align: center;
     flex-basis: 30%;
     min-height: 20vh;
-    position:relative;
+    position: relative;
   }
 
   .tile-content {
