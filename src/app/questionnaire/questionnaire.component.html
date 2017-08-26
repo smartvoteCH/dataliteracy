@@ -21,7 +21,7 @@
   <h1>{{currentQuestion.title}}</h1>
   <dl-part *ngFor="let part of currentQuestion.description" [part]="part"></dl-part>
   <div>
-    <button (click)="toggleOpen()" class="show-answer">{{isOpen ? 'Antwort verbergen' : 'Antwort anzeigen'}}</button>
+    <button (click)="toggleOpen()" class="show-answer">{{isOpen ? currentQuestion.buttonLabel.open : currentQuestion.buttonLabel.closed}}</button>
   </div>
   <div *ngIf="isOpen" class="answer">
     <dl-part *ngFor="let part of currentQuestion.answer" [part]="part"></dl-part>

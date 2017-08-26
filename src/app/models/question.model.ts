@@ -6,12 +6,13 @@ export class QuestionModel implements Question {
   private _title: string;
   private _description: QuestionPart[];
   private _answer: QuestionPart[];
+  private _buttonLabel: {open: string, closed: string};
 
 
   static fromJSON(data: any) {
     const description = this.questionPartFromJSON(data.description);
     const answer = this.questionPartFromJSON(data.answer);
-    return new QuestionModel(data.title, description, answer);
+    return new QuestionModel(data.title, description, answer, data.buttonLabel);
   }
 
   private static questionPartFromJSON(list: any): QuestionPart[] {
@@ -39,10 +40,11 @@ export class QuestionModel implements Question {
     return parts;
   }
 
-  constructor(title: string, description: QuestionPart[], answer: QuestionPart[]) {
+  constructor(title: string, description: QuestionPart[], answer: QuestionPart[], buttonLabel?: {open: string, closed: string}) {
     this._title = title;
     this._description = description;
     this._answer = answer;
+    this._buttonLabel = buttonLabel || {open: 'Antwort verbergen', closed: 'Antwort anzeigen'};
   }
 
   get title(): string {
@@ -57,12 +59,17 @@ export class QuestionModel implements Question {
     return this._answer;
   }
 
+  get buttonLabel(): {open: string, closed: string} {
+    return this._buttonLabel;
+  }
+
 }
 
 export interface Question {
   title: string;
   description: QuestionPart[];
   answer: QuestionPart[];
+  buttonLabel: {open: string, closed: string};
 }
 
 export interface QuestionPart {

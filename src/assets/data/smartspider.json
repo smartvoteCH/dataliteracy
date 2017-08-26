@@ -65,6 +65,10 @@
         "alt": "",
         "caption": "Bild vom Fragebogen"
       }
-    ]
+    ],
+    "buttonLabel": {
+      "open": "Hier ist das Button-Label anders (offen)",
+      "closed": "hier ist das Button-Label anders (zu)"
+    }
 	}
 ]
