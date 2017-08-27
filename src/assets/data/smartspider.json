@@ -1,8 +1,121 @@
 [
   {
-		"title": "Spider-Frage 1",
+		"title": "Achsenanordnung",
 		"description": [
-      "Spider-Beschreibung 1a",
+      "Sieht ein Smartspider immer gleich aus?",
+      {
+        "type": "smartspider",
+        "data": {
+          "color": "00FF00",
+          "smartspider": [
+            {
+              "id": 15800008474,
+              "value": 0,
+              "name": "Offene Aussenpolitik"
+            },
+            {
+              "id": 15800008475,
+              "value": 0,
+              "name": "Liberale Wirtschaftspolitik"
+            },
+            {
+              "id": 15800008476,
+              "value": 25,
+              "name": "Restriktive Finanzpolitik"
+            },
+            {
+              "id": 15800008477,
+              "value": 0,
+              "name": "Law & Order"
+            },
+            {
+              "id": 15800008478,
+              "value": 0,
+              "name": "Restriktive Migrationspolitik"
+            },
+            {
+              "id": 15800008479,
+              "value": 0,
+              "name": "Ausgebauter Umweltschutz"
+            },
+            {
+              "id": 15800008480,
+              "value": 75,
+              "name": "Ausgebauter Sozialstaat"
+            },
+            {
+              "id": 15800008481,
+              "value": 100,
+              "name": "Liberale Gesellschaft"
+            }
+          ]
+        }
+      }],
+		"answer": [
+      "Kommt ganz auf die Achsenreihenfolge an",
+      {
+        "type": "smartspider",
+        "data": {
+          "color": "00FF00",
+          "smartspider": [
+            {
+              "id": 15800008474,
+              "value": 0,
+              "name": "Offene Aussenpolitik"
+            },
+            {
+              "id": 15800008480,
+              "value": 75,
+              "name": "Ausgebauter Sozialstaat"
+            },
+            {
+              "id": 15800008475,
+              "value": 0,
+              "name": "Liberale Wirtschaftspolitik"
+            },
+            {
+              "id": 15800008476,
+              "value": 25,
+              "name": "Restriktive Finanzpolitik"
+            },
+            {
+              "id": 15800008477,
+              "value": 0,
+              "name": "Law & Order"
+            },
+            {
+              "id": 15800008478,
+              "value": 0,
+              "name": "Restriktive Migrationspolitik"
+            },
+            {
+              "id": 15800008479,
+              "value": 0,
+              "name": "Ausgebauter Umweltschutz"
+            },
+            {
+              "id": 15800008481,
+              "value": 100,
+              "name": "Liberale Gesellschaft"
+            }
+          ]
+        }
+      }
+    ]
+	},
+	{
+		"title": "Können unterschiedliche Antworten zum gleichen Spider führen?",
+		"description": [
+      "Was für Spider ergeben sich aus folgenden Antworten?",
+      {
+        "type": "figure",
+        "url": "https://cdn.pixabay.com/photo/2013/07/13/11/52/questionnaire-158862_1280.png",
+        "alt": "",
+        "caption": "Tabelle mit Antworten von zwei Kandidaten"
+      }
+    ],
+		"answer": [
+      "Spider Kandidat 1",
       {
         "type": "smartspider",
         "data": {
@@ -51,24 +164,71 @@
           ]
         }
       },
-      "Spider-Beschreibung 1b"],
-		"answer": ["Antwort 1"]
-	},
-	{
-		"title": "Spider-Frage 2",
-		"description": ["Spider-Beschreibung 2"],
-		"answer": [
-      "Antwort 2",
+      "Spider Kandidat 2",
       {
-        "type": "figure",
-        "url": "https://cdn.pixabay.com/photo/2013/07/13/11/52/questionnaire-158862_1280.png",
-        "alt": "",
-        "caption": "Bild vom Fragebogen"
+        "type": "smartspider",
+        "data": {
+          "color": "00FF00",
+          "smartspider": [
+            {
+              "id": 15800008474,
+              "value": 0,
+              "name": "Offene Aussenpolitik"
+            },
+            {
+              "id": 15800008475,
+              "value": 0,
+              "name": "Liberale Wirtschaftspolitik"
+            },
+            {
+              "id": 15800008476,
+              "value": 25,
+              "name": "Restriktive Finanzpolitik"
+            },
+            {
+              "id": 15800008477,
+              "value": 0,
+              "name": "Law & Order"
+            },
+            {
+              "id": 15800008478,
+              "value": 0,
+              "name": "Restriktive Migrationspolitik"
+            },
+            {
+              "id": 15800008479,
+              "value": 0,
+              "name": "Ausgebauter Umweltschutz"
+            },
+            {
+              "id": 15800008480,
+              "value": 75,
+              "name": "Ausgebauter Sozialstaat"
+            },
+            {
+              "id": 15800008481,
+              "value": 100,
+              "name": "Liberale Gesellschaft"
+            }
+          ]
+        }
       }
+    ]
+	},
+  {
+    "title": "Zuteilung Fragen auf Achsen",
+		"description": [
+      "Folgende Frage:",
+      "Hier steht die Frage zum Atomausstieg",
+      "gehört zur Achse Umwelt, aber wie?"
+    ],
+		"answer": [
+      "Begründung Pro Umweltschutz",
+      "Begründung contra Umweltschuth"
     ],
     "buttonLabel": {
-      "open": "Hier ist das Button-Label anders (offen)",
-      "closed": "hier ist das Button-Label anders (zu)"
+      "open": "weniger anzeigen",
+      "closed": "mehr lesen"
     }
-	}
+  }
 ]
