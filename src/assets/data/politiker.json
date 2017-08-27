@@ -1,0 +1,16 @@
+[
+  {
+		"title": "Politiker",
+		"description": [
+      "Mit smartvote und smartmonitor lässt sich sehr gut überprüfen, ob Politiker tatsächlich so stimmen, wie im Vorfeld angegeben.",
+      "Aber weshalb ändern Politiker ihre Meinung?"
+      ],
+		"answer": [
+      "Es gibt folgende Gründe: ..."
+    ],
+    "buttonLabel": {
+      "open": "weniger anzeigen",
+      "closed": "mehr lesen"
+    }
+	}
+]

@@ -13,6 +13,8 @@ const appRoutes: Routes = [
   {path: 'smartvote', component: QuestionnaireComponent},
   {path: 'smartspider/:id', component: QuestionnaireComponent},
   {path: 'smartspider', component: QuestionnaireComponent},
+  {path: 'politiker/:id', component: QuestionnaireComponent},
+  {path: 'politiker', component: QuestionnaireComponent},
   {path: 'proportion/:id', component: QuestionnaireComponent},
   {path: 'proportion', component: QuestionnaireComponent},
   {path: 'impressum', component: ImpressumComponent},
