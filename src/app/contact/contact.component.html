@@ -1,35 +1,41 @@
 <dl-simple-navigation></dl-simple-navigation>
 <div class="form-wrapper">
   <h1>Kontakt</h1>
-  <form (ngSubmit)="onSubmit()" #f>
+  <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <input type="hidden" name="uid" value="" ngModel />
     <div class="row">
       <label for="name">Name*</label>
-      <input type="text" name="name" required />
+      <input type="text" name="name" required ngModel />
     </div>
     <div class="row">
       <label for="firstname">Vorname*</label>
-      <input type="text" name="firstname" required />
+      <input type="text" name="firstname" required ngModel />
     </div>
 
     <div class="row">
       <label for="mail">E-Mail*</label>
-      <input type="email" name="mail" required />
+      <input type="email" name="mail" required email ngModel />
     </div>
 
     <div class="row">
       <label for="subject">Betreff*</label>
-      <input type="text" name="subject" required />
+      <input type="text" name="subject" required ngModel />
     </div>
 
     <div class="row high">
       <label for="message">Nachricht*</label>
-      <textarea name="message" required></textarea>
+      <textarea name="message" required ngModel></textarea>
     </div>
 
     <div class="row">
       <label></label>
-      <button>Abschicken</button>
+      <button type="submit">Abschicken</button>
+      <span class="msg" [ngSwitch]="status">
+        <span *ngSwitchCase="'success'" class="success">Mail erfolgreich versendet.</span>
+        <span *ngSwitchCase="'send_error'" class="error">Mail konnte nicht versendet werden.</span>
+        <span *ngSwitchCase="'validation_error'" class="error">Ungültige Dateneingabe.</span>
+        <ng-container *ngSwitchDefault></ng-container>
+      </span>
     </div>
-
   </form>
 </div>

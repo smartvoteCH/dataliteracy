@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+
+import { FormService } from '../services/form.service';
 
 @Component({
   selector: 'dl-contact',
@@ -8,15 +10,28 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  @ViewChild('f') form: NgForm;
+  _status: string;
 
-  constructor() { }
+  constructor(private _formService: FormService) { }
 
   ngOnInit() {
   }
 
-  onSubmit() {
-    console.log('in submit', this.form);
+  onSubmit(form: NgForm) {
+    if (form.valid && !form.value.uid) {
+      this._formService.sendContactForm(form.value)
+        .subscribe(_ => {
+          this._status = 'success';
+        }, _ =>  {
+          this._status = 'send_error';
+        });
+    } else {
+      this._status = 'validation_error';
+    }
+  }
+
+  public get status(): string {
+    return this._status;
   }
 
 }

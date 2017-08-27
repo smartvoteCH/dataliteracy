@@ -33,3 +33,20 @@ textarea {
   min-height: 10em;
   min-width: 40em;
 }
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 1px solid red;
+}
+
+.msg {
+  padding-left: 1em;
+}
+
+.msg .error {
+  color: red;
+}
+
+.msg .success {
+  color: green;
+}
