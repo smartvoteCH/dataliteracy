@@ -1,0 +1,164 @@
+[
+  {
+		"title": "Minimale Frage",
+		"description": [
+      "Diese Frage enthält nur die Pflichtfelder"
+      ],
+		"answer": [
+      "Weil nicht mehr nötig ist"
+    ]
+	},
+  {
+		"title": "Grafiken (von der Applikation gerendert)",
+		"description": [
+      "SmartSpider",
+      {
+        "type": "smartspider",
+        "data": {
+          "color": "00FF00",
+          "smartspider": [
+            {
+              "id": 15800008474,
+              "value": 0,
+              "name": "Offene Aussenpolitik"
+            },
+            {
+              "id": 15800008475,
+              "value": 0,
+              "name": "Liberale Wirtschaftspolitik"
+            },
+            {
+              "id": 15800008476,
+              "value": 25,
+              "name": "Restriktive Finanzpolitik"
+            },
+            {
+              "id": 15800008477,
+              "value": 0,
+              "name": "Law & Order"
+            },
+            {
+              "id": 15800008478,
+              "value": 0,
+              "name": "Restriktive Migrationspolitik"
+            },
+            {
+              "id": 15800008479,
+              "value": 0,
+              "name": "Ausgebauter Umweltschutz"
+            },
+            {
+              "id": 15800008480,
+              "value": 75,
+              "name": "Ausgebauter Sozialstaat"
+            },
+            {
+              "id": 15800008481,
+              "value": 100,
+              "name": "Liberale Gesellschaft"
+            }
+          ]
+        }
+      },
+      "Balkendiagramm",
+      {
+        "type": "barchart",
+        "data": {
+          "title": "won't show yet",
+          "data": [
+            {
+              "value": 3,
+              "color": "red"
+            },
+            {
+              "value": 11,
+              "color": "blue"
+            },
+            {
+              "value": 7,
+              "color": "yellow"
+            },
+            {
+              "value": 20,
+              "color": "green"
+            },
+            {
+              "value": 18,
+              "color": "black"
+            }
+          ]
+        }
+      },
+      "Kuchendiagramm",
+      {
+        "type": "piechart",
+        "data": {
+          "title": "won't show yet",
+          "data": [
+            {
+              "value": 3,
+              "color": "red"
+            },
+            {
+              "value": 11,
+              "color": "blue"
+            },
+            {
+              "value": 7,
+              "color": "yellow"
+            },
+            {
+              "value": 20,
+              "color": "green"
+            },
+            {
+              "value": 18,
+              "color": "black"
+            }
+          ]
+        }
+      }
+      ],
+		"answer": [
+      "Weil nicht mehr nötig ist"
+    ]
+	},
+  {
+		"title": "Bilder",
+		"description": [
+      "Bild mit minimaler Konfiguration",
+      {
+        "type": "figure",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Manhattan_distance.svg/660px-Manhattan_distance.svg.png"
+      },
+      "Bild mit maximaler Konfiguration",
+      {
+        "type": "figure",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Manhattan_distance.svg/660px-Manhattan_distance.svg.png",
+        "alt": "Dieses Bild stellt verschiedene Distanzmasse gegenüber",
+        "caption": "City Block Distanzmass (blau), Euklid (grün)",
+        "width": "250px",
+        "heihgt": "100px"
+      }
+      ],
+		"answer": [
+      "Weil nicht mehr nötig ist"
+    ]
+	},
+  {
+		"title": "Maximale Frage",
+		"description": [
+      "Description kann ganz",
+      "viele",
+      "beliebige Blöcke enthalten."
+      ],
+		"answer": [
+      "Answer natürlich",
+      "auch"
+    ],
+    "buttonLabel": {
+      "open": "Button label wenn offen",
+      "closed": "Button label wenn geschlossen"
+    }
+	}
+]

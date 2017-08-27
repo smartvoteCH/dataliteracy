@@ -11,7 +11,6 @@
   </ng-container>
   <ng-container *ngSwitchCase="'figure'">
     <figure>
-
       <img [src]="part.figure.url" [alt]="part.figure.alt" [attr.width]="part.figure.width || null" [attr.height]="part.figure.height || null"  />
       <figcaption *ngIf="part.figure.caption">{{part.figure.caption}}</figcaption>
     </figure>

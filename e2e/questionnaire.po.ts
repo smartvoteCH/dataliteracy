@@ -3,7 +3,7 @@ import { browser, element, by } from 'protractor';
 export class QuestionnairePage {
 
   navigateTo() {
-    return browser.get('/smartvote');
+    return browser.get('/sample');
   }
   getNavigation() {
     return element(by.css('nav'));

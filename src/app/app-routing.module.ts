@@ -18,7 +18,10 @@ const appRoutes: Routes = [
   {path: 'proportion/:id', component: QuestionnaireComponent},
   {path: 'proportion', component: QuestionnaireComponent},
   {path: 'impressum', component: ImpressumComponent},
-  {path: 'kontakt', component: ContactComponent}
+  {path: 'kontakt', component: ContactComponent},
+  // for e2e testing and documentation only
+  {path: 'sample/:id', component: QuestionnaireComponent},
+  {path: 'sample', component: QuestionnaireComponent},
 ];
 
 @NgModule({
