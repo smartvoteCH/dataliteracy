@@ -1,17 +1,46 @@
 [
   {
-		"title": "SV-Frage 1",
-		"description": ["SV-Beschreibung 1"],
-		"answer": ["Antwort 1"]
+		"title": "Euklid vs. City Block",
+		"description": ["Es gibt mehr als einen Weg eine politische Distanz zu berechnen und keine ist falsch oder richtig."],
+    "buttonLabel": {
+      "open": "weniger zeigen",
+      "closed": "mehr lesen"
+    },
+		"answer": [
+      "City Block ist ein Distanzmass ....",
+      "Die euklidische Distanz hingegen basiert ... Die bekannteste Variante dafür ist wohl der Satz des Pythagoras im Fall von nur zwei Dimensionen",
+      {
+        "type": "figure",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Manhattan_distance.svg/660px-Manhattan_distance.svg.png",
+        "alt": "",
+        "caption": "City Block Distanzmass (blau), Euklid (grün)",
+        "width": "250px"
+      }
+    ]
 	},
 	{
-		"title": "SV-Frage 2",
-		"description": ["SV-Beschreibung 2"],
-		"answer": ["Antwort 2"]
+		"title": "Wahlempfehlung: Berechnung",
+		"description": ["Wie funktioniert eigentlich die Berechnung von Wahlemfehlungen?"],
+    "buttonLabel": {
+      "open": "weniger zeigen",
+      "closed": "mehr lesen"
+    },
+		"answer": [
+      "Grundsätzlich so...",
+      "Wenn nicht alle Fragen beantwortet sind dann so...",
+      "Damit Mitte-Positionen nicht zu stark belohnt werden, haben wir eine Gewichtung einführt für klare Ansagen (ja, nein)"
+    ]
 	},
 	{
-		"title": "SV-Frage 3",
-		"description": ["SV-Beschreibung 3"],
-		"answer": ["Antwort 3"]
+		"title": "Wahlempfehlung Übereinstimmung",
+		"description": ["Wenn ich mit einem Kandidaten 75% übereinstimmung habe, heisst das dann, dass der Kandidat bei drei viertel der Themen/Fragen meine Meinung vertritt?"],
+    "buttonLabel": {
+      "open": "weniger zeigen",
+      "closed": "mehr lesen"
+    },
+		"answer": [
+      "Das ist nicht ganz so einfach, wegen ...",
+      "Unter prozentualer/linearer Übereinstimmung versteht man ..."
+    ]
 	}
 ]
