@@ -31,6 +31,7 @@ describe('dataliteracy app', () => {
   });
 
   describe('questionnaire', () => {
+    const titleOfQuestion1 = 'Euklid vs. City Block';
 
     beforeEach(() => {
       questionnaire = new QuestionnairePage();
@@ -38,11 +39,11 @@ describe('dataliteracy app', () => {
 
     it('navigate between questions', () => {
       questionnaire.navigateTo();
-      expect(questionnaire.getTitle()).toEqual('SV-Frage 1');
+      expect(questionnaire.getTitle()).toEqual(titleOfQuestion1);
       questionnaire.goToNext();
-      expect(questionnaire.getTitle()).toEqual('SV-Frage 2');
+      expect(questionnaire.getTitle()).not.toEqual(titleOfQuestion1);
       questionnaire.goToPrev();
-      expect(questionnaire.getTitle()).toEqual('SV-Frage 1');
+      expect(questionnaire.getTitle()).toEqual(titleOfQuestion1);
     });
 
     it('show answer', () => {
