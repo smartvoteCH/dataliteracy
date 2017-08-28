@@ -1,36 +1,31 @@
 [
   {
-		"title": "Proportion-Frage 1",
-		"description": ["Proportion-Beschreibung 1"],
-		"answer": ["Antwort 1"]
-	},
-	{
-		"title": "Proportion-Frage 2",
+		"title": "Proportionen",
 		"description": [
-      "Proportion-Beschreibung 2",
+      "Bei welcher der folgenden Grafiken ist der grüne Anteil am grössten?",
       {
-        "type": "barchart",
+        "type": "piechart",
         "data": {
           "title": "won't show yet",
           "data": [
             {
-              "value": 3,
+              "value": 17,
               "color": "red"
             },
             {
-              "value": 11,
+              "value": 18,
               "color": "blue"
-            },
-            {
-              "value": 7,
-              "color": "yellow"
             },
             {
               "value": 20,
               "color": "green"
             },
             {
-              "value": 18,
+              "value": 22,
+              "color": "yellow"
+            },
+            {
+              "value": 23,
               "color": "black"
             }
           ]
@@ -42,16 +37,40 @@
           "title": "won't show yet",
           "data": [
             {
-              "value": 3,
+              "value": 20,
               "color": "red"
             },
             {
-              "value": 11,
+              "value": 20,
               "color": "blue"
             },
             {
-              "value": 7,
+              "value": 19,
+              "color": "green"
+            },
+            {
+              "value": 21,
               "color": "yellow"
+            },
+            {
+              "value": 20,
+              "color": "black"
+            }
+          ]
+        }
+      },
+      {
+        "type": "piechart",
+        "data": {
+          "title": "won't show yet",
+          "data": [
+            {
+              "value": 23,
+              "color": "red"
+            },
+            {
+              "value": 22,
+              "color": "blue"
             },
             {
               "value": 20,
@@ -59,12 +78,114 @@
             },
             {
               "value": 18,
+              "color": "yellow"
+            },
+            {
+              "value": 17,
               "color": "black"
             }
           ]
         }
       }
     ],
-		"answer": ["Antwort 2"]
+		"answer": [
+      "Antwort 1",
+      {
+        "type": "barchart",
+        "data": {
+          "title": "won't show yet",
+          "scale": 8,
+          "data": [
+            {
+              "value": 17,
+              "color": "red"
+            },
+            {
+              "value": 18,
+              "color": "blue"
+            },
+            {
+              "value": 20,
+              "color": "green"
+            },
+            {
+              "value": 22,
+              "color": "yellow"
+            },
+            {
+              "value": 23,
+              "color": "black"
+            }
+          ]
+        }
+      },
+      {
+        "type": "barchart",
+        "data": {
+          "title": "won't show yet",
+          "scale": 8,
+          "data": [
+            {
+              "value": 20,
+              "color": "red"
+            },
+            {
+              "value": 20,
+              "color": "blue"
+            },
+            {
+              "value": 19,
+              "color": "green"
+            },
+            {
+              "value": 21,
+              "color": "yellow"
+            },
+            {
+              "value": 20,
+              "color": "black"
+            }
+          ]
+        }
+      },
+      {
+        "type": "barchart",
+        "data": {
+          "title": "won't show yet",
+          "scale": 8,
+          "data": [
+            {
+              "value": 23,
+              "color": "red"
+            },
+            {
+              "value": 22,
+              "color": "blue"
+            },
+            {
+              "value": 20,
+              "color": "green"
+            },
+            {
+              "value": 18,
+              "color": "yellow"
+            },
+            {
+              "value": 17,
+              "color": "black"
+            }
+          ]
+        }
+      }
+    ]
+	},
+	{
+		"title": "Proportion-Frage 2",
+		"description": [
+      "TBD"
+    ],
+		"answer": [
+      "TBD"
+    ]
 	}
 ]

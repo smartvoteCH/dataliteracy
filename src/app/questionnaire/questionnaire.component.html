@@ -19,7 +19,9 @@
 </nav>
 <ng-container *ngIf="ready && currentQuestion">
   <h1>{{currentQuestion.title}}</h1>
-  <dl-part *ngFor="let part of currentQuestion.description" [part]="part"></dl-part>
+  <div class="question">
+    <dl-part *ngFor="let part of currentQuestion.description" [part]="part"></dl-part>
+  </div>
   <div>
     <button (click)="toggleOpen()" class="show-answer">{{isOpen ? currentQuestion.buttonLabel.open : currentQuestion.buttonLabel.closed}}</button>
   </div>

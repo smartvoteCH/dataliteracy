@@ -25,8 +25,13 @@ export class BarchartComponent implements OnInit {
       .attr('height', height);
 
     const itemWidth = width / this.chart.data.length;
-    const itemPadding = 1;
-    const scale = 10;
+    const itemPadding = 8;
+    const scale = this.chart.scale || 10;
+
+    const maxValue = Math.max(...this.chart.data.map(d => d.value));
+    if (maxValue * scale > height) {
+      console.warn(`barchart will be truncated at the top. maxValue: ${maxValue}, scale: ${scale}, height: ${height}`);
+    }
 
     svg.selectAll('rect')
       .data(this.chart.data)

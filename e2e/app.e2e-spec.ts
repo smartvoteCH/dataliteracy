@@ -55,7 +55,7 @@ describe('dataliteracy app', () => {
     describe('json can be parsed', () => {
       const pages = [
         'smartvote', 'smartspider', 'politiker',
-        'usa', 'taeuschung',
+        'usa', 'taeuschung', 'proportion',
         'sample'];
       for (const page of pages) {
         it(page, () => {
