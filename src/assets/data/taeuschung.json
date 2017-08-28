@@ -1,0 +1,21 @@
+[
+  {
+		"title": "Kumulierte Werte",
+		"description": [
+      "Liniendiagramm (muss ich technisch noch umsetzen)",
+      "Vermittelt positives Bild, nicht wahr?"
+      ],
+		"answer": [
+      "So sieht es unkumuliert aus:"
+    ]
+	},
+  {
+		"title": "Gibt es einen Klimawandel?",
+		"description": [
+      "Liniendiagramm (muss ich technisch noch umsetzen)"
+      ],
+		"answer": [
+      "So sieht es mit einer anderen Skala aus:"
+    ]
+	}
+]

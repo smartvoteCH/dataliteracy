@@ -17,6 +17,8 @@ const appRoutes: Routes = [
   {path: 'politiker', component: QuestionnaireComponent},
   {path: 'usa/:id', component: QuestionnaireComponent},
   {path: 'usa', component: QuestionnaireComponent},
+  {path: 'taeuschung/:id', component: QuestionnaireComponent},
+  {path: 'taeuschung', component: QuestionnaireComponent},
   {path: 'proportion/:id', component: QuestionnaireComponent},
   {path: 'proportion', component: QuestionnaireComponent},
   {path: 'impressum', component: ImpressumComponent},
