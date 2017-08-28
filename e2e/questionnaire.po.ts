@@ -2,8 +2,8 @@ import { browser, element, by } from 'protractor';
 
 export class QuestionnairePage {
 
-  navigateTo() {
-    return browser.get('/sample');
+  navigateTo(route?: string) {
+    return browser.get(route || '/sample');
   }
   getNavigation() {
     return element(by.css('nav'));

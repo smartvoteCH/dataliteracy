@@ -52,6 +52,16 @@ describe('dataliteracy app', () => {
       expect(questionnaire.getAnswer().isPresent()).toBeTruthy();
     });
 
+    describe('json can be parsed', () => {
+      const pages = ['smartvote', 'smartspider', 'politiker', 'sample'];
+      for (const page of pages) {
+        it(page, () => {
+          questionnaire.navigateTo(`/${page}`);
+          expect(questionnaire.getTitle()).toBeTruthy();
+        });
+      }
+    });
+
   });
 
 });
