@@ -53,7 +53,10 @@ describe('dataliteracy app', () => {
     });
 
     describe('json can be parsed', () => {
-      const pages = ['smartvote', 'smartspider', 'politiker', 'sample'];
+      const pages = [
+        'smartvote', 'smartspider', 'politiker',
+        'usa',
+        'sample'];
       for (const page of pages) {
         it(page, () => {
           questionnaire.navigateTo(`/${page}`);

@@ -15,6 +15,8 @@ const appRoutes: Routes = [
   {path: 'smartspider', component: QuestionnaireComponent},
   {path: 'politiker/:id', component: QuestionnaireComponent},
   {path: 'politiker', component: QuestionnaireComponent},
+  {path: 'usa/:id', component: QuestionnaireComponent},
+  {path: 'usa', component: QuestionnaireComponent},
   {path: 'proportion/:id', component: QuestionnaireComponent},
   {path: 'proportion', component: QuestionnaireComponent},
   {path: 'impressum', component: ImpressumComponent},

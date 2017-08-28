@@ -1,0 +1,49 @@
+[
+  {
+		"title": "Karten",
+		"description": [
+      "Geographisch",
+      {
+        "type": "figure",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Image_PlaceHolder.png",
+        "caption": "geografische Karte"
+      },
+      "Wie kann man es noch anzeigen?"
+      ],
+		"answer": [
+      "Population",
+
+      {
+        "type": "figure",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Image_PlaceHolder.png",
+        "caption": "Karte im Verhältnis der Einwohner"
+      }
+    ],
+    "buttonLabel": {
+      "open": "weniger anzeigen",
+      "closed": "mehr lesen"
+    }
+	},
+  {
+		"title": "Medienresonanz Wahlprognosen",
+		"description": [
+      "Die Berichterstattung der Medien sah z.B. so aus..."
+    ],
+		"answer": [
+      "Nicht berücksichtig haben sie..."
+    ],
+    "buttonLabel": {
+      "open": "weniger anzeigen",
+      "closed": "mehr lesen"
+    }
+	},
+  {
+		"title": "Grafiken",
+		"description": [
+      "TBD"
+      ],
+		"answer": [
+      "TBD"
+    ]
+	}
+]
