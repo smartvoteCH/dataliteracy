@@ -19,13 +19,8 @@ if(empty($errors))
 	$message = $request->message;
 	$from_name = $request->namefrom;
 
-	$contact = "<p><strong>Name:</strong> $from_name</p>
-							<p><strong>Email:</strong> $from_email</p>";
-	$content = "<p>$message</p>";
-
-
 	$email_body = '<html><body>';
-	$email_body .= "$contact $content";
+	$email_body .= "<p>$message</p>";
 	$email_body .= '</body></html>';
 
 	$headers .= "MIME-Version: 1.0\r\n";
@@ -36,9 +31,7 @@ if(empty($errors))
 	mail($to_email,$subject,$email_body,$headers);
 
 	$response_array['status'] = 'success';
-	$response_array['from'] = $from_email;
 	echo json_encode($response_array);
-	echo json_encode($from_email);
 	header($response_array);
 	return $from_email;
 } else {

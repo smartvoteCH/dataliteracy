@@ -21,6 +21,7 @@ export class FormService {
   // mail contents
   private emailSmartvote = 'stefani.gerber@politools.net'; // 'kontakt@smartvote.ch';
   private nameSmartvote = 'smartvote';
+  private contactSubjectPrefix = 'Kontaktformular Data Literacy:';
   private sendLinkSubject = 'Nacht der Forschung: Data Literacy';
   private sendLinkMessage = `Danke für Ihren Besuch. Sie finden unseren Stand unter
   <a href="http://dataliteracy.smartvote.ch">dataliteracy.smartvote.ch</a>`;
@@ -35,8 +36,13 @@ export class FormService {
       emailto: this.emailSmartvote,
       emailfrom: email,
       namefrom: name,
-      subject: subject,
-      message: message
+      subject: `${this.contactSubjectPrefix} ${subject}`,
+      message: `
+        <p>Von: ${name}</p>
+        <p>Email: ${email}</p>
+        <br/>
+        <br/>
+        ${message}`
     };
     console.log(postMessage);
     return this.http.post(this.emailScriptUrl, postMessage)
