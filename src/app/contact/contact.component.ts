@@ -18,9 +18,14 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    if (form.valid && !form.value.uid) {
-      this._formService.sendContactForm(form.value)
-        .subscribe(_ => {
+    const value = form.value;
+    if (form.valid && !value.uid) {
+      this._formService.sendContactForm(value.uid,
+        `${value.firstname} ${value.name}`,
+        value.mail,
+        value.subject,
+        value.message
+      ).subscribe(_ => {
           this._status = 'success';
         }, _ =>  {
           this._status = 'send_error';

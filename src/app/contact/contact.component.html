@@ -32,7 +32,7 @@
       <button type="submit">Abschicken</button>
       <span class="msg" [ngSwitch]="status">
         <span *ngSwitchCase="'success'" class="success">Mail erfolgreich versendet.</span>
-        <span *ngSwitchCase="'send_error'" class="error">Mail konnte nicht versendet werden.</span>
+        <span *ngSwitchCase="'send_error'" class="error">Mail konnte nicht versendet werden. Versuchen Sie es später nochmals oder kontaktieren Sie uns per E-Mail: <a href="mailto:kontakt@smartvote.ch">kontakt@smartvote.ch</a></span>
         <span *ngSwitchCase="'validation_error'" class="error">Ungültige Dateneingabe.</span>
         <ng-container *ngSwitchDefault></ng-container>
       </span>
