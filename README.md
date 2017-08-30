@@ -2,6 +2,10 @@
 
 Explain and improve data literacy.
 
+## Structure
+
+The application has multiple topics (tiles on home screen) and for each topic, one or multiple questions. The user is first shown a question and can the view the answer. The application is intended to be used in discussion between a scientist and a interested layperson.
+
 ## Data
 
 Data is stored in local json files (mapping is made over the route name). See /assets/data/sample.json for possible elements (-> localhost:4200/sample).
