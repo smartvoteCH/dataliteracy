@@ -47,7 +47,7 @@ export class FormService {
     return this.sendMessage(postMessage);
   }
 
-  private sendMessage(message: Message): Observable<Message> | any {
+  private sendMessage(postMessage: Message): Observable<Message> | any {
   return this.http.post(this.emailScriptUrl, postMessage)
     .map(response => {
       // console.log('sending email was successful', response);
