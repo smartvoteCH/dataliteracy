@@ -4,14 +4,13 @@
 }
 
 .form-wrapper .row {
-  padding: .4em;
+  padding: .4em 0;
 }
 
 label {
   display: inline-block;
   min-width: 8em;
-  text-align: right;
-  margin-right: .2em;
+  margin: .2em .4em;
   font-weight: bold;
 }
 
@@ -25,22 +24,17 @@ textarea {
   font-size: inherit;
   border: 1px solid grey;
   border-radius: 4px;
-  min-width: 20em;
+  width: 100%;
   padding: .4em;
 }
 
 textarea {
   min-height: 10em;
-  min-width: 40em;
 }
 
 input.ng-invalid.ng-touched,
 textarea.ng-invalid.ng-touched {
   border: 1px solid red;
-}
-
-.msg {
-  padding-left: 1em;
 }
 
 .msg .error {
@@ -49,4 +43,21 @@ textarea.ng-invalid.ng-touched {
 
 .msg .success {
   color: green;
+}
+
+@media screen and (min-width: 400px) {
+  label {
+    text-align: right;
+  }
+
+  input,
+  textarea {
+    width: 16em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  textarea {
+    width: 32em;
+  }
 }

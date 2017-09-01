@@ -6,18 +6,18 @@
   </p>
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <input type="hidden" name="uid" value="" ngModel />
-    <div class="row">
-      <label for="mail">Ihre E-Mail Adresse*</label>
-      <input type="email" name="mail" required email ngModel />
-      <button type="submit">Link senden</button>
-    </div>
-    <div class="row">
+    <div class="row" *ngIf="status">
       <span class="msg" [ngSwitch]="status">
         <span *ngSwitchCase="'success'" class="success">Mail erfolgreich versendet.</span>
         <span *ngSwitchCase="'send_error'" class="error">Mail konnte nicht versendet werden.</span>
         <span *ngSwitchCase="'validation_error'" class="error">Ungültige Dateneingabe.</span>
         <ng-container *ngSwitchDefault></ng-container>
       </span>
+    </div>
+    <div class="row">
+      <label for="mail">Ihre E-Mail Adresse*</label>
+      <input type="email" name="mail" required email ngModel />
+      <input type="submit" value="Link senden" />
     </div>
   </form>
   <p>

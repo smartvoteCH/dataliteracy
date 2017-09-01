@@ -1,7 +1,9 @@
-:host .row {
-  margin-top: 2em;
-  padding: 0;
+:host *[type="submit"] {
+  margin-top: 1em;
 }
-:host .msg {
-  padding-left: 0;
+
+@media screen and (min-width: 800px) {
+  :host *[type="submit"] {
+    margin-top: 0;
+  }
 }

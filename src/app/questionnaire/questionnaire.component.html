@@ -1,5 +1,6 @@
 <nav *ngIf="ready">
-  <ul>
+  <dl-simple-navigation *ngIf="!hasPrevious && !hasNext"></dl-simple-navigation>
+  <ul *ngIf="hasPrevious || hasNext">
     <li>
       <a [routerLink]="['/', currentPage, index-1]" [hidden]="!hasPrevious">
         <i class="fa fa-arrow-left"></i>
