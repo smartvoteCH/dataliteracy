@@ -1,0 +1,7 @@
+:host .row {
+  margin-top: 2em;
+  padding: 0;
+}
+:host .msg {
+  padding-left: 0;
+}

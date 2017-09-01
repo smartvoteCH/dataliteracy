@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { ContactComponent } from './contact/contact.component';
+import { SendlinkComponent } from './sendlink/sendlink.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   {path: 'proportion/:id', component: QuestionnaireComponent},
   {path: 'proportion', component: QuestionnaireComponent},
   {path: 'impressum', component: ImpressumComponent},
+  {path: 'linksenden', component: SendlinkComponent},
   {path: 'kontakt', component: ContactComponent},
   // for e2e testing and documentation only
   {path: 'sample/:id', component: QuestionnaireComponent},

@@ -4,11 +4,11 @@ import { NgForm } from '@angular/forms';
 import { FormService } from '../services/form.service';
 
 @Component({
-  selector: 'dl-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  selector: 'dl-sendlink',
+  templateUrl: './sendlink.component.html',
+  styleUrls: ['./sendlink.component.css']
 })
-export class ContactComponent implements OnInit {
+export class SendlinkComponent implements OnInit {
 
   _status: string;
 
@@ -19,12 +19,10 @@ export class ContactComponent implements OnInit {
 
   onSubmit(form: NgForm) {
     const value = form.value;
+    console.log(value);
     if (form.valid && !value.uid) {
-      this._formService.sendContactForm(value.uid,
-        `${value.firstname} ${value.name}`,
-        value.mail,
-        value.subject,
-        value.message
+      this._formService.sendLink(value.uid,
+        value.mail
       ).subscribe(_ => {
           this._status = 'success';
         }, _ =>  {

@@ -20,6 +20,7 @@
       "prefix": "dl",
       "styles": [
         "styles.css",
+        "form.css",
         "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [],

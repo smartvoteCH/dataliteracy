@@ -18,6 +18,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { HomeComponent } from './home/home.component';
 import { SimpleNavigationComponent } from './navigation/simple-navigation/simple-navigation.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
+import { SendlinkComponent } from './sendlink/sendlink.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { QuestionnaireComponent } from './questionnaire/questionnaire.component'
     PiechartComponent,
     ImpressumComponent,
     ContactComponent,
-    SimpleNavigationComponent
+    SimpleNavigationComponent,
+    SendlinkComponent
   ],
   imports: [
     BrowserModule,

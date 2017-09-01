@@ -44,15 +44,18 @@ export class FormService {
         <br/>
         ${message}`
     };
-    console.log(postMessage);
-    return this.http.post(this.emailScriptUrl, postMessage)
-      .map(response => {
-        console.log('sending email was successful', response);
-      })
-      .catch(error => {
-        console.log('sending email failed', error);
-        return Observable.throw(error);
-      });
+    return this.sendMessage(postMessage);
+  }
+
+  private sendMessage(message: Message): Observable<Message> | any {
+  return this.http.post(this.emailScriptUrl, postMessage)
+    .map(response => {
+      // console.log('sending email was successful', response);
+    })
+    .catch(error => {
+      // console.log('sending email failed', error);
+      return Observable.throw(error);
+    });
   }
 
   sendLink(uid: string, mail: string): Observable<Message> | any {
@@ -64,6 +67,7 @@ export class FormService {
       subject: this.sendLinkSubject,
       message: this.sendLinkMessage
     };
+    return this.sendMessage(postMessage);
   }
 
 }
