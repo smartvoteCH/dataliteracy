@@ -17,6 +17,11 @@ h1 {
   color: #000000;
 }
 
+.tile-content i {
+  color: #E48100;
+  width: 20px;
+}
+
 @media screen and (min-width: 400px) {
   .tile-container {
     display: flex;
@@ -40,6 +45,8 @@ h1 {
 
   .tile-content i {
     display: block;
+    font-size: x-large;
+    width: auto;
   }
 
   .tile:empty {
