@@ -27,6 +27,7 @@ export class ContactComponent implements OnInit {
         value.message
       ).subscribe(_ => {
           this._status = 'success';
+          form.reset();
         }, _ =>  {
           this._status = 'send_error';
         });

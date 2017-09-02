@@ -19,7 +19,7 @@ export class FormService {
   private emailScriptUrl = '/assets/email.php';
 
   // mail contents
-  private emailSmartvote = 'stefani.gerber@politools.net'; // 'kontakt@smartvote.ch';
+  private emailSmartvote = 'kontakt@smartvote.ch';
   private nameSmartvote = 'smartvote';
   private contactSubjectPrefix = 'Kontaktformular Data Literacy:';
   private sendLinkSubject = 'Nacht der Forschung: Data Literacy';

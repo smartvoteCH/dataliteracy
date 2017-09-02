@@ -24,7 +24,7 @@ if(empty($errors))
 	$email_body .= '</body></html>';
 
 	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+	$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 	$headers .= "From: $from_email\n";
 	$headers .= "Reply-To: $from_email";
 
