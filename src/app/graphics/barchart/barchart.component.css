@@ -1,11 +1,5 @@
-:host {
-  margin: 20px;
-}
-
-:host >>> div {
-  display: inline-block;
-  width: 20px;
-  height: 75px;   /* We'll override this later */
-  background-color: teal;
-  margin-right: 2px;
+@media screen and (min-width: 800px) {
+  :host {
+    margin: 20px;
+  }
 }

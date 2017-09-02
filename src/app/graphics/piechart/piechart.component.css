@@ -1,3 +1,5 @@
-:host {
-  margin: 20px;
+@media screen and (min-width: 800px) {
+  :host {
+    margin: 20px;
+  }
 }

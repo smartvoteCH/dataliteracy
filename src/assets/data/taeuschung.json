@@ -2,17 +2,32 @@
   {
 		"title": "Kumulierte Werte",
 		"description": [
-      "Liniendiagramm (muss ich technisch noch umsetzen)",
+      "Grafiken noch übersetzt zeichnen",
+      {
+        "type": "figure",
+        "url": "https://blog.heapanalytics.com/wp-content/uploads/2014/04/misleading2_cumulative.png",
+        "caption": "Kumulierte Verkaufszahlen"
+      },
       "Vermittelt positives Bild, nicht wahr?"
       ],
 		"answer": [
-      "So sieht es unkumuliert aus:"
+      "So sieht es unkumuliert aus:",
+      {
+        "type": "figure",
+        "url": "https://blog.heapanalytics.com/wp-content/uploads/2014/04/misleading2_normal.png",
+        "caption": "normale Verkaufszahlen"
+      }
     ]
 	},
   {
 		"title": "Gibt es einen Klimawandel?",
 		"description": [
-      "Liniendiagramm (muss ich technisch noch umsetzen)"
+      "Grafiken noch übersetzt zeichnen",
+      {
+        "type": "figure",
+        "url": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/blogs/the-fix/files/2015/12/NRO_Temp_2.jpg&w=1484",
+        "caption": "Klimaerwärmung"
+      }
       ],
 		"answer": [
       "So sieht es mit einer anderen Skala aus:"

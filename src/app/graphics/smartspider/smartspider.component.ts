@@ -13,11 +13,6 @@ let r = d3Scale.scaleLinear().domain([0, 100]).range([7, 187])
   selector: 'dl-smartspider',
   template: '',
   styles: [`
-    >>> svg {
-      width: 450px;
-      height: 470px;
-      margin-top: 30px;
-    }
   `]
 })
 export class SmartspiderComponent implements OnInit, OnChanges {
