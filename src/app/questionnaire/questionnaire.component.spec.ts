@@ -9,6 +9,7 @@ import { BarchartComponent } from '../graphics/barchart/barchart.component';
 import { PiechartComponent } from '../graphics/piechart/piechart.component';
 import { PartComponent } from './part/part.component';
 import { QuestionnaireComponent } from './questionnaire.component';
+import { SimpleNavigationComponent } from '../navigation/simple-navigation/simple-navigation.component';
 
 describe('QuestionnaireComponent', () => {
   let component: QuestionnaireComponent;
@@ -16,7 +17,13 @@ describe('QuestionnaireComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuestionnaireComponent, PartComponent, SmartspiderComponent, BarchartComponent, PiechartComponent ],
+      declarations: [
+        QuestionnaireComponent,
+        PartComponent,
+        SmartspiderComponent,
+        BarchartComponent,
+        PiechartComponent,
+        SimpleNavigationComponent ],
       imports: [ RouterTestingModule ],
       providers: [
         {provide: QuestionService, useClass: MockQuestionService}
