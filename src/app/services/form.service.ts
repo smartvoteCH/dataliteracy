@@ -24,7 +24,8 @@ export class FormService {
   private contactSubjectPrefix = 'Kontaktformular Data Literacy:';
   private sendLinkSubject = 'Nacht der Forschung 2017: Data Literacy-Link';
   private sendLinkMessage = `
-    <p>Vielen Dank für Ihren Besuch an der Nacht der Forschung und des smartvote-Standes. Unsere Data Literacy-Applikation finden Sie unter:<br/>
+    <p>Vielen Dank für Ihren Besuch an der Nacht der Forschung und des smartvote-Standes.
+     Unsere Data Literacy-Applikation finden Sie unter:<br/>
     <a href="http://dataliteracy.smartvote.ch">dataliteracy.smartvote.ch</a>
     <br/>
     <p>Freundliche Grüsse,<br/>

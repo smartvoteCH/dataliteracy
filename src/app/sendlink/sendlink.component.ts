@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 
 import { FormService } from '../services/form.service';
 
@@ -12,7 +13,9 @@ export class SendlinkComponent implements OnInit {
 
   _status: string;
 
-  constructor(private _formService: FormService) { }
+  constructor(private _formService: FormService, titleService: Title) {
+    titleService.setTitle('NdF 2017 – Data Literacy: Link versenden');
+  }
 
   ngOnInit() {
   }

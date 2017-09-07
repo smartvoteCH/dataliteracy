@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 import 'rxjs/add/operator/takeWhile';
 
@@ -21,7 +22,9 @@ export class QuestionnaireComponent implements OnInit, OnDestroy {
   private _currentPage;
 
 
-  constructor(private route: ActivatedRoute, private router: Router, private questionService: QuestionService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private questionService: QuestionService, titleService: Title) {
+    titleService.setTitle('NdF 2017 – Data Literacy');
+  }
 
   ngOnInit() {
     this._alive = true;

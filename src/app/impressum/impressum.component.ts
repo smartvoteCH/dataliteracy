@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'dl-impressum',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImpressumComponent implements OnInit {
 
-  constructor() { }
+  constructor(titleService: Title) {
+    titleService.setTitle('NdF 2017 – Data Literacy: Impressum');
+  }
 
   ngOnInit() {
   }
