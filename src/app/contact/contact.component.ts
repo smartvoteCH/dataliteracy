@@ -20,6 +20,7 @@ export class ContactComponent implements OnInit {
   onSubmit(form: NgForm) {
     const value = form.value;
     if (form.valid && !value.uid) {
+      this._status = 'in_progress';
       this._formService.sendContactForm(value.uid,
         `${value.firstname} ${value.name}`,
         value.mail,

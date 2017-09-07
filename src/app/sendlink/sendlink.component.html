@@ -2,12 +2,20 @@
 <div class="form-wrapper">
   <h1>Link versenden</h1>
   <p>
-    Sie möchten sich diese Webseite zuhause ansehen? Sie können sich den Link dazu einfach per Mail zusenden. Ihre E-Mail-Adresse wird weder gespeichert noch für Newsletter verwendet.
+    Möchten Sie sich mit unserer Data Literacy-Applikation zu Hause in Ruhe vertieft befassen? Dann können Sie sich den Link einfach per Mail zustellen.
+  </p>
+  <p>
+    Ihre E-Mail-Adresse wird weder gespeichert noch für andere Dienste verwendet oder an Dritte weitergegeben.
   </p>
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <input type="hidden" name="uid" value="" ngModel />
+    <div class="row">
+      <label for="mail">Ihre E-Mailadresse*</label>
+      <input type="email" name="mail" required email ngModel />
+    </div>
     <div class="row" *ngIf="status">
       <span class="msg" [ngSwitch]="status">
+        <span *ngSwitchCase="'in_progress'" class="progress">Mail wird versendet...</span>
         <span *ngSwitchCase="'success'" class="success">Mail erfolgreich versendet.</span>
         <span *ngSwitchCase="'send_error'" class="error">Mail konnte nicht versendet werden.</span>
         <span *ngSwitchCase="'validation_error'" class="error">Ungültige Dateneingabe.</span>
@@ -15,13 +23,11 @@
       </span>
     </div>
     <div class="row">
-      <label for="mail">Ihre E-Mail Adresse*</label>
-      <input type="email" name="mail" required email ngModel />
       <input type="submit" value="Link senden" />
     </div>
   </form>
   <p>
-    Wenn Sie Ihr Handy dabei haben können Sie auch den Barcode scannen.
+    Alternativ können Sie, wenn Sie eine entsprechende App auf Ihrem Smartphone installiert haben, diesen Barcode scannen:
   </p>
   <img src="/assets/images/static_qr_code.jpg" alt="QR-Code" />
 </div>

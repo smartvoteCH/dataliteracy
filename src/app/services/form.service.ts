@@ -22,9 +22,34 @@ export class FormService {
   private emailSmartvote = 'kontakt@smartvote.ch';
   private nameSmartvote = 'smartvote';
   private contactSubjectPrefix = 'Kontaktformular Data Literacy:';
-  private sendLinkSubject = 'Nacht der Forschung: Data Literacy';
-  private sendLinkMessage = `Danke für Ihren Besuch. Sie finden unseren Stand unter
-  <a href="http://dataliteracy.smartvote.ch">dataliteracy.smartvote.ch</a>`;
+  private sendLinkSubject = 'Nacht der Forschung 2017: Data Literacy-Link';
+  private sendLinkMessage = `
+    <p>Vielen Dank für Ihren Besuch an der Nacht der Forschung und des smartvote-Standes. Unsere Data Literacy-Applikation finden Sie unter:<br/>
+    <a href="http://dataliteracy.smartvote.ch">dataliteracy.smartvote.ch</a>
+    <br/>
+    <p>Freundliche Grüsse,<br/>
+      Ihr smartvote-Team
+    </p>
+    ----------------------------------------------------<br/>
+    <p>smartvote<br/><br/>
+    +41 (0)33 534 99 15<br/>
+    <a href="mailto:kontakt@smartvote.ch">kontakt@smartvote.ch</a><br/>
+    <br/>
+    <a href="http://www.smartvote.ch">www.smartvote.ch</a><br/>
+    <a href="http://www.twitter.com/smartvoteCH">www.twitter.com/smartvoteCH</a><br/>
+    <a href="http://www.facebook.com/smartvote.ch">www.facebook.com/smartvote.ch</a><br/>
+    <br/>
+    smartvote<br/>
+    Postfach 834<br/>
+    CH-3000 Bern 9<br/>
+    Switzerland
+    </p>
+    ----------------------------------------------------<br/>
+    <p>Unterstützen Sie smartvote!<br/>
+    Weitere Informationen unter: www.smartvote.ch/donate<br/>
+    => Spendenkonto PC 30-666488-8</p>
+    ----------------------------------------------------<br/>
+    `;
 
 
 

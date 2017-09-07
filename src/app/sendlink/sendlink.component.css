@@ -1,9 +1,6 @@
-:host *[type="submit"] {
-  margin-top: 1em;
-}
-
-@media screen and (min-width: 800px) {
-  :host *[type="submit"] {
-    margin-top: 0;
+@media screen and (min-width: 400px) {
+  :host *[type="submit"],
+  .msg {
+    margin-left: 10.4em;
   }
 }

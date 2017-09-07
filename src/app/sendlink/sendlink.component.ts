@@ -21,6 +21,7 @@ export class SendlinkComponent implements OnInit {
     const value = form.value;
     console.log(value);
     if (form.valid && !value.uid) {
+      this._status = 'in_progress';
       this._formService.sendLink(value.uid,
         value.mail
       ).subscribe(_ => {

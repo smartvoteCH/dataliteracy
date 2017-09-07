@@ -54,6 +54,11 @@ textarea.ng-invalid.ng-touched {
   textarea {
     width: 16em;
   }
+
+  *[type="submit"],
+  .msg {
+    margin-left: 9.1em;
+  }
 }
 
 @media screen and (min-width: 800px) {

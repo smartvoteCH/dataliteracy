@@ -1,6 +1,0 @@
-@media screen and (min-width: 400px) {
-  :host *[type="submit"],
-  .msg {
-    margin-left: 9.1em;
-  }
-}
