@@ -37,6 +37,11 @@ textarea.ng-invalid.ng-touched {
   border: 1px solid red;
 }
 
+
+.msg .progress {
+  color: #E48100;;
+}
+
 .msg .error {
   color: red;
 }

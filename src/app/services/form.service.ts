@@ -47,7 +47,7 @@ export class FormService {
     </p>
     ----------------------------------------------------<br/>
     <p>Unterstützen Sie smartvote!<br/>
-    Weitere Informationen unter: www.smartvote.ch/donate<br/>
+    Weitere Informationen unter: <a href="http://www.smartvote.ch/donate">www.smartvote.ch/donate</a><br/>
     => Spendenkonto PC 30-666488-8</p>
     ----------------------------------------------------<br/>
     `;
