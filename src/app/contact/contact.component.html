@@ -1,6 +1,12 @@
 <dl-simple-navigation></dl-simple-navigation>
 <div class="form-wrapper">
   <h1>Kontakt</h1>
+  <p>
+    Dies ist ein erster Testlauf im Rahmen eines längerfristigen Projekts zu Data Literacy. Es ist noch nicht alles perfekt und es gibt noch einiges zu verbessern.
+  </p>
+  <p>
+    Bei Fragen stehen wir Ihnen gerne zur Verfügung. Auch freuen wir uns über (konstruktive) Kritik und Verbesserungsvorschläge
+  </p>
   <form (ngSubmit)="onSubmit(f)" #f="ngForm">
 
     <div class="row">
@@ -38,17 +44,11 @@
       <textarea name="message" required ngModel></textarea>
     </div>
 
-
-    <div class="row">
-      <span class="msg" [ngSwitch]="status">
-        <span *ngSwitchCase="'success'" class="success">Mail erfolgreich versendet.</span>
-        <span *ngSwitchCase="'send_error'" class="error">Mail konnte nicht versendet werden. Versuchen Sie es später nochmals oder kontaktieren Sie uns per E-Mail: <a href="mailto:kontakt@smartvote.ch">kontakt@smartvote.ch</a></span>
-        <span *ngSwitchCase="'validation_error'" class="error">Ungültige Dateneingabe.</span>
-        <ng-container *ngSwitchDefault></ng-container>
-      </span>
-    </div>
     <div class="row">
       <input type="submit" value="Abschicken" />
     </div>
   </form>
+  <p>
+    smartvote: <a href="mailto:kontakt@smartvote.ch">kontakt@smartvote.ch</a> / +41 (0)33 534 99 15
+  </p>
 </div>
